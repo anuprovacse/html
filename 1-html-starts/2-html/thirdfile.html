@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Please Fill Up The Survey Form</h2>
+<form action="useraccount.php" method="get" style="text-align: center;">
+
+<label for="username">Your Username:</label> <br>
+<input id="username" type="text" autofocus style="padding: 5px;"><br><br>
+<label for="password">Your Password</label><br>
+<input type="password" name="" id="password" required style="padding: 5px;"><br> <br>
+
+<label for="">Gender</label> <br>
+<input type="radio" name="Gender" value="Male" id="Male"> 
+Male
+<input type="radio" name="Gender" value="Female" id="Female"> 
+Female <br> <br>
+
+<label for="">Age</label>
+<select name="select" id="">
+<option value="child">Child</option>
+<option value="adult">Adult</option>
+<option value="older">Older</option>
+</select> <br> <br>
+
+<label for="">Select Your Divison</label><br>
+<input type="text" list="mylist">
+
+<datalist id="mylist">
+
+<option value="1">Dhaka</option>
+<option value="2">Barishal</option>
+<option value="3">Chattogram</option>
+<option value="4">Khulna</option>
+<option value="5">Rajshahi</option>
+<option value="6">Rangpur</option>
+<option value="7">Mymensingh</option>
+<option value="8">Sylhet</option>
+
+</datalist>
+<br><br>
+
+
+<label for="opinion">Give Your Opinion About Us:</label><br>
+<textarea name="" id="" cols="20" rows="5" placeholder="write here"></textarea>
+<br>
+<br>
+<label for="">Your Pin:</label> <br>
+<input type="password" required name="" id="" maxlength="5">
+
+<br><br>
+<input type="submit" value="Submit"> 
+<br> <br>
+
+<audio controls>
+    <source src="audio/best-ever-ringtone-mp3-slowednreverb-60494.mp3" type="audio/mp3">
+    Your Media Does not Support This
+</audio>
+<video height="500" width="250" controls>
+
+<source src="videos/video-1.mp4" type="video/mp4">
+Your Media Does not Support This
+</video> <br> <br>
+<b><p style="font-size: x-large;">About Location</p></b>
+
+<h1 id="empty"></h1>
+
+<button type="button" onclick="myposition()">GET LOCATION</button>
+
+<script>
+var h = document.getElementById("empty");
+function myposition(){
+    if(navigator.geolocation){
+navigator.geolocation.getCurrentPosition(showlocation);
+    }
+}
+function showlocation(position){
+h.innerHTML="long : "+position.coords.longitude;
+h.innerHTML="lati : "+position.coords.latitude;
+}
+</script>
+
+</body>
+</html>

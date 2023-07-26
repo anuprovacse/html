@@ -1,0 +1,40 @@
+h4{
+    background-color: black;
+    color: antiquewhite;
+}
+
+table, th, td{
+border: 1px solid black;
+border-collapse: collapse;
+padding: 15px;
+}
+
+p{
+    background-color: blueviolet;
+ font-size: 2vw;
+}
+
+
+span{
+    background-color: black;
+    color: aliceblue;
+}
+
+#ptag
+{
+    background-color: coral;
+    color: rgb(10, 6, 6);
+}
+#secondptag{
+    background-color: darkslategray;
+    color: beige;
+}
+
+.life{
+    background-color: rgb(177, 72, 72);
+    color: aliceblue;
+}
+
+input{
+    padding: 5px;
+}

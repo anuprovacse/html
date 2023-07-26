@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>this is second page</p>
+
+    <!-- table code -->
+    <table draggable="true">
+ <caption>Class one Result</caption>
+
+ <!-- tr for new colom -->
+ <tr> 
+    <!-- th for header -->
+    <th>Roll</th>
+    <th>Name</th>
+    <th>Subject Name</th>
+    <th>Marks</th>
+ </tr>
+
+<tr>
+    <!-- td for table data  -->
+    <td>1</td>
+    <td>Anuprova</td>
+    <td>ICT</td>
+    <td>90</td>
+</tr>
+<tr>
+    <!-- td for table data  -->
+    <td>1</td>
+    <td>Anuprova</td>
+    <td>ICT</td>
+    <td>90</td>
+</tr>
+<tr>
+    <!-- td for table data  -->
+    <td rowspan="2">1</td>
+    <td>Anuprova</td>
+    <td>ICT</td>
+    <td>90</td>
+</tr>
+<tr>
+    <!-- td for table data  -->
+    
+    <td>Anuprova</td>
+    <td colspan="2">ICT</td>
+    
+</tr>
+
+    </table>
+<!-- 
+    for unorder list -->
+<ul>
+    <li>Mango</li>
+    <li>Banana</li>
+    <li>Apple</li>
+    <li>Jackfruits</li>
+    <li>Tomatos</li>
+    
+</ul>
+<ol type="i">
+    <li>Mango</li>
+    <li>Banana</li>
+    <li>Apple</li>
+    <li>Jackfruits</li>
+    <li>Tomatos</li> 
+</ol>
+<ol type="A">
+    <li> <a href="https://facebook.com" target="_blank">Facebook</a></li>
+    <li>Banana</li>
+    <li>Apple</li>
+    <li>Jackfruits</li>
+    <li>Tomatos</li> 
+</ol>
+<p draggable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, sequi.</p>
+<span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum ullam eos ducimus omnis magni, quia odit quae error debitis ad quidem, expedita sint voluptatem a.</span>
+<hr>
+<!-- for ID and CLass  -->
+<p id="ptag">This is HTML</p>
+<button type="button" onclick="myfunction()"> CLICK HERE</button>
+<script>
+    function myfunction()
+    {
+document.getElementById("ptag").innerHTML="This is from JAVASCRIPT"
+    }
+</script>
+<p id="secondptag" draggable="true">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quidem cum doloribus libero nam nostrum unde corporis illum et quae.</p>
+
+<p class="life" draggable="false">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus impedit ex soluta sit aliquid magni, nemo, quasi vel natus pariatur cumque, suscipit deleniti deserunt libero.</p>
+<p class="life" draggable="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo reprehenderit quae laudantium tempore unde voluptates voluptatum, quis consequuntur error ducimus?</p>
+</body>
+</html>
